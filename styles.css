@@ -1,41 +1,74 @@
     
 @media screen and (max-width: 1440px) {
+    .easy-bank {
+        display: flex;
+    }
+    
+    
+    .card {
+        margin: 5px;
+        padding: 10px;
+        
 
-    .navbar {
-        color: green;
-        text-decoration: none;
-        padding-left: 50px;
-        display: inline;
-        font-size: 18px;
+
+
+    }
+    
+    .svg {
+        padding-left: 20px;
         
     }
     
-    .svg-logo {
-        padding-left: 100px;
+    .text-heading {
+    text-align: left;
+        margin-left: 0%;
+    
     }
-
+    
 }
 
 
 @media screen and (max-width: 414px) { 
-    .navbar {
-        color: red;
-        text-decoration: none;
-        padding-left: 25px;
-        display: inline;
-        font-size: 18px;
+    .easy-bank {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .card {
+        margin: 5px;
+        padding: 1px;
+
+    }
+    
+    .svg {
+        margin-left: 50%;
         
     }
     
-    .svg-logo {
-        padding-left: 1px;
-        
+    .text-heading {
+        text-align: center;
+    
     }
-
+   
+    
+    
+    
 }
 
 
 
-.easy-bank {
+easy-bank {
     background-color: hsl(233, 8%, 62%);
+    
 }
+
+
+
+
+
+
+
+
+
+
