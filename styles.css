@@ -15,15 +15,29 @@
     }
     
     .svg {
-        padding-left: 20px;
+        padding-left: 0px;
         
     }
-    
-    .text-heading {
-    text-align: left;
-        margin-left: 0%;
-    
+
+
+    .svg-container{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        margin-bottom: 20px;
+        font-size: xx-large;
     }
+    
+
+    .text-heading {
+        text-align: left;
+        font-size: 18px;
+        font-weight: bolder;
+
+    }
+    
+    .text {
+        text-align: left;
     
 }
 
@@ -41,16 +55,26 @@
 
     }
     
-    .svg {
-        margin-left: 50%;
+
+    .text-heading {
+        text-align: center;
+        font-size: 18px;
+        margin-left: 115px;
+        font-weight: bolder;
+    }
+    
+    .text {
+        text-align: center;
         
     }
     
-    .text-heading {
-        text-align: center;
-    
+    .svg-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        font-size: xx-large;
     }
-   
     
     
     
@@ -58,8 +82,21 @@
 
 
 
-easy-bank {
+.easy-bank {
     background-color: hsl(233, 8%, 62%);
+    
+}
+
+
+    
+}
+
+
+
+.svg {
+    max-width: 100%;
+   max-height: 100%;
+
     
 }
 
