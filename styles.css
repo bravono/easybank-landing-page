@@ -1,3 +1,4 @@
+/*Basic Styles*/
 body {
   font-size: 18px;
   font-family: "Public Sans", sans-serif;
@@ -7,11 +8,27 @@ h1 {
   margin-top: 20px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 /*Collapsibles*/
+.collapsible {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
 .collapsible__header {
   display: flex;
-  padding: 10px 0;
   justify-content: space-between;
+  height: auto;
+  padding: 30px 20px;
+  background-color: rgb(255, 255, 255);
+  /* 
+  border: 3px solid dodgerblue; 
+  */
 }
 
 .collapsible__close {
@@ -36,29 +53,6 @@ h1 {
 .collapsible_expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
-}
-
-.container {
-  align-items: center;
-  border: 3px solid gray;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 445px;
-}
-
-.my-nav {
-  width: 445px;
-  height: 80px;
-  background-color: white;
-  position: fixed;
-  top: 0;
-  padding: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1;
 }
 
 .article-one {
