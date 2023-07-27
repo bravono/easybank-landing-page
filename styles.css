@@ -1,16 +1,11 @@
+/*Basic Styles*/
 body {
   font-size: 18px;
   font-family: "Public Sans", sans-serif;
 }
 
-.myNav {
-  width: 445px;
-  height: 80px;
-  padding: 30px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+h1 {
+  margin-top: 20px;
 }
 
 .container {
@@ -18,12 +13,75 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid gray;
 }
 
-.article-1 {
+/*Collapsibles*/
+.collapsible__header {
+  border: 3px solid gold;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.collapsible__close {
+  display: none;
+}
+
+.collapsible__content {
+  text-align: center;
+  margin-top: 20px;
+  border: 3px solid dodgerblue;
+  border-radius: 10px;
+  background-color: white;
+  width: 300px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible_expanded .collapsible__hamburger {
+  display: none;
+}
+
+.collapsible_expanded .collapsible__close {
+  display: block;
+}
+
+.collapsible_expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/*List Style*/
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.article-one {
+  position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.phone-mockup {
+  position: absolute;
+  bottom: 175px;
+  width: 400px;
 }
 
   .easy-bank {
