@@ -14,12 +14,6 @@ h1 {
 }
 
 /*Collapsibles*/
-.collapsible {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
-}
-
 .collapsible__header {
   display: flex;
   justify-content: space-between;
@@ -53,6 +47,18 @@ h1 {
 .collapsible_expanded .collapsible__content {
   max-height: 100vh;
   opacity: 1;
+}
+
+/*List Style*/
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: black;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .article-one {
