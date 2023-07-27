@@ -13,6 +13,14 @@ body {
   align-items: center;
 }
 
+/*.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid gray;
+  
+} */
 
 .article-1 {
   display: flex;
@@ -26,6 +34,7 @@ body {
   .card {
     background-color: hsl(233, 8%, 62%);
     border-radius: 0%;
+    border-color: hsl(233, 8%, 62%); ;
 
   }
 
