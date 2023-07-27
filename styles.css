@@ -11,18 +11,17 @@ h1 {
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Collapsibles*/
 .collapsible__header {
+  border: 3px solid gold;
   display: flex;
   justify-content: space-between;
-  height: auto;
   padding: 30px 20px;
   background-color: rgb(255, 255, 255);
-  /* 
-  border: 3px solid dodgerblue; 
-  */
 }
 
 .collapsible__close {
@@ -30,6 +29,12 @@ h1 {
 }
 
 .collapsible__content {
+  text-align: center;
+  margin-top: 20px;
+  border: 3px solid dodgerblue;
+  border-radius: 10px;
+  background-color: white;
+  width: 300px;
   max-height: 0;
   overflow: hidden;
   opacity: 0;
@@ -53,12 +58,17 @@ h1 {
 .list {
   list-style: none;
   padding-left: 0;
-  color: black;
 }
 
 .list--inline .list__item {
   display: inline-block;
   margin-right: 20px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .article-one {
