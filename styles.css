@@ -19,6 +19,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 3px solid gray;
+  
 }
 
 .article-1 {
@@ -31,8 +32,8 @@ body {
   }
 
   .card {
-    margin: 5px;
-    padding: 10px;
+    background-color: hsl(233, 8%, 62%);
+
   }
 
   .svg {
@@ -66,8 +67,7 @@ body {
     }
 
     .card {
-      margin: 5px;
-      padding: 1px;
+      
     }
 
     .heading {
