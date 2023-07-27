@@ -91,8 +91,9 @@ body {
   /* testimony text */
   
   .testimony-text {
-    flex: 1;
-    margin-left: 40px;
+    padding-left: 10px;
+    font-weight: 1px;
+    color: red;
   }
 
 
