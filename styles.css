@@ -7,6 +7,33 @@ h1 {
   margin-top: 20px;
 }
 
+/*Collapsibles*/
+.collapsible__header {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+
+.collapsible__close {
+  display: none;
+}
+
+.collapsible__content {
+  display: none;
+}
+
+.collapsible_expanded .collapsible__hamburger {
+  display: none;
+}
+
+.collapsible_expanded .collapsible__close {
+  display: block;
+}
+
+.collapsible_expanded .collapsible__content {
+  display: block;
+}
+
 .container {
   align-items: center;
   border: 3px solid gray;
@@ -16,7 +43,7 @@ h1 {
   width: 445px;
 }
 
-.myNav {
+.my-nav {
   width: 445px;
   height: 80px;
   background-color: white;
@@ -30,7 +57,7 @@ h1 {
   z-index: 1;
 }
 
-.article-1 {
+.article-one {
   position: relative;
   display: flex;
   flex-direction: column;
