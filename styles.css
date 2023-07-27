@@ -136,6 +136,37 @@ body {
       margin-bottom: 20px;
       font-size: xx-large;
     }
+
+    /* testimonial */
+
+    .testimony {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(245, 244, 244);;
+    }
+
+
+    .img-card {
+      background-color: white;
+      margin: 25px;
+      margin-top: 20px;
+      
+    }
+    
+    .testimony-img {
+      height: 200px;
+      width: 347px;
+      border-radius: 5px;
+      object-fit: cover;
+      margin-top: 0px;
+    }
+    
+    
+    .testimony-text {
+      flex: 1;
+      margin-left: 5px;
+    }
+
   }
 
   .easy-bank {
