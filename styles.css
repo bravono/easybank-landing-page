@@ -61,6 +61,40 @@ body {
   }
 
 
+  /* Testimony */
+
+  .testimony {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(245, 244, 244);
+    padding-bottom: 200px;
+  
+  
+  }
+/* image */  
+  .img-card {
+    background-color: white;
+    margin: 10px;
+    margin-top: 150px;
+    
+  }
+  
+  .img {
+    height: 200px;
+    width: 310px;
+    border-radius: 12px;
+    margin-top: 60px;
+    object-fit: cover;
+    margin-top: 0px;
+  }
+  
+  /* testimony text */
+  
+  .testimony-text {
+    flex: 1;
+    margin-left: 40px;
+  }
+
 
   @media screen and (max-width: 414px) {
     .easy-bank {
