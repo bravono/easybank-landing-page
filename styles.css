@@ -4,13 +4,13 @@ body {
 }
 
 .myNav {
-  width: 445px;
-  height: 80px;
-  padding: 30px;
+  align-items: center;
   display: flex;
   flex-direction: row;
+  height: 80px;
   justify-content: space-between;
-  align-items: center;
+  padding: 30px;
+  width: 445px;
 }
 
 /*.container {
@@ -34,11 +34,11 @@ body {
 
   .card {
     background-color: hsl(233, 8%, 62%);
-    border-radius: 0%;
     border-color: hsl(233, 8%, 62%); ;
+    border-radius: 0%;
+    margin-top: 130px;
     padding-left: 50px;
     padding-left: 50x;
-    margin-top: 100px;
 
   }
 
@@ -47,17 +47,17 @@ body {
   }
 
   .svg-container {
-    display: flex;
-    justify-content: left;
     align-items: center;
-    margin-bottom: 20px;
+    display: flex;
     font-size: xx-large;
+    justify-content: left;
+    margin-bottom: 20px;
   }
 
   .text-heading {
-    text-align: left;
     font-size: 18px;
     font-weight: bolder;
+    text-align: left;
   }
 
   .text {
@@ -68,11 +68,11 @@ body {
   /* Testimony */
 
   .testimony {
+  
+    background-color: rgb(245, 244, 244);
     display: flex;
     flex-direction: row;
-    background-color: rgb(245, 244, 244);
     padding-bottom: 200px;
-  
   
   }
 /* image */  
@@ -84,20 +84,20 @@ body {
   }
   
   .testimony-img {
-    height: 200px;
-    width: 261px;
     border-radius: 12px;
+    height: 200px;
+    margin-top: 0px;
     margin-top: 60px;
     object-fit: cover;
-    margin-top: 0px;
+    width: 261px;
   }
   
   /* testimony text */
   
   .testimony-text {
-    padding-left: 10px;
-    font-weight: 1px;
     color: red;
+    font-weight: 1px;
+    padding-left: 10px;
   }
 
   .text-overlay {
@@ -118,7 +118,7 @@ body {
       background-color: hsl(233, 8%, 62%);
       border-color: hsl(233, 8%, 62%); ;
       border-radius: 0%;
-      padding-left: 50px;
+      padding-left: 100px;
       padding-left: 50x;
       margin-top: 50px;
       
@@ -127,11 +127,11 @@ body {
 
 
     .heading {
-        text-align: left;
         font-size: 18px;
         font-weight: bolder;
         margin-left: 10px;
         margin-top: 20px;
+        text-align: left;
     
     }
 
@@ -142,30 +142,40 @@ body {
     
 
     .text-heading {
-      text-align: center;
       font-size: 18px;
-      margin-left: 115px;
       font-weight: bolder;
+      margin-left: 115px;
+      text-align: center;
     }
 
     .text {
       text-align: center;
     }
 
-    .svg-container {
+    .text-overlay {
       display: flex;
       justify-content: center;
+      position: absolute;
+      padding-left: 50px;
+      margin-top: 50px;
+      padding-bottom: 100px;
+    }
+    
+
+    .svg-container {
       align-items: center;
-      margin-bottom: 20px;
+      display: flex;
       font-size: xx-large;
+      justify-content: center;
+      margin-bottom: 20px;
     }
 
     /* testimonial */
 
     .testimony {
+      background-color: rgb(245, 244, 244);
       display: flex;
       flex-direction: column;
-      background-color: rgb(245, 244, 244);;
     }
 
 
@@ -178,11 +188,11 @@ body {
     }
     
     .testimony-img {
-      height: 200px;
-      width: 340px;
       border-radius: 5px;
-      object-fit: cover;
+      height: 200px;
       margin-top: 0px;
+      object-fit: cover;
+      width: 340px;
     }
     
     
@@ -211,16 +221,21 @@ body {
 
 
 .heading {
-    text-align: center;
     font-size: 18px;
-    margin-left: 115px;
     font-weight: bolder;
     margin-left: 10px;
+    margin-left: 115px;
+    text-align: center;
 
 
 }
 
-
+.text-overlay {
+  position: absolute;
+  padding-left: 50px;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
 
 
 
