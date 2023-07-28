@@ -29,6 +29,7 @@ body {
 
   .easy-bank {
     display: flex;
+    margin-top: 10px;
   }
 
   .card {
@@ -48,6 +49,7 @@ body {
     align-items: center;
     margin-bottom: 20px;
     font-size: xx-large;
+    margin-top: 300px;
   }
 
   .text-heading {
@@ -59,6 +61,15 @@ body {
   .text {
     text-align: left;
   }
+
+  .leverage-text {
+    position: absolute;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 10px;
+
+  }
+
 
 
   /* Testimony */
@@ -94,6 +105,12 @@ body {
     padding-left: 10px;
     font-weight: 1px;
     color: red;
+  }
+
+  .text-overlay {
+    position: absolute;
+    padding-left: 10px;
+    margin-top: 10px;
   }
 
 
