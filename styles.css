@@ -36,6 +36,9 @@ body {
     background-color: hsl(233, 8%, 62%);
     border-radius: 0%;
     border-color: hsl(233, 8%, 62%); ;
+    padding-left: 50px;
+    padding-left: 50x;
+    margin-top: 100px;
 
   }
 
@@ -49,7 +52,6 @@ body {
     align-items: center;
     margin-bottom: 20px;
     font-size: xx-large;
-    margin-top: 300px;
   }
 
   .text-heading {
@@ -61,15 +63,6 @@ body {
   .text {
     text-align: left;
   }
-
-  .leverage-text {
-    position: absolute;
-    margin-top: 100px;
-    padding-bottom: 100px;
-    margin-left: 10px;
-
-  }
-
 
 
   /* Testimony */
@@ -110,7 +103,7 @@ body {
   .text-overlay {
     position: absolute;
     padding-left: 10px;
-    margin-top: 10px;
+    padding-top: 10px;
   }
 
 
@@ -118,6 +111,18 @@ body {
     .easy-bank {
       display: flex;
       flex-direction: column;
+      margin-top: 5px;
+    }
+
+    .card {
+      background-color: hsl(233, 8%, 62%);
+      border-color: hsl(233, 8%, 62%); ;
+      border-radius: 0%;
+      padding-left: 50px;
+      padding-left: 50x;
+      margin-top: 50px;
+      
+  
     }
 
 
