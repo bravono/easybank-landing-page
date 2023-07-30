@@ -1,16 +1,15 @@
+/* Basic Styles */
 body {
   font-size: 18px;
   font-family: "Public Sans", sans-serif;
 }
 
-/* Collapsibles */
-
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  border: 3px solid gray;
 }
+
+/* Collapsibles */
 
 .collapsible__header {
   display: flex;
@@ -29,13 +28,43 @@ body {
   display: none;
 }
 
-.collapsible__content {
-  display: none;
+.collapsible__block {
+  max-height: 0;
+  overflow: hidden;
 }
 
 .easy-bank {
   display: flex;
   margin-top: 10px;
+}
+
+/* List */
+.list {
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+}
+
+.list--inline .list__item {
+  list-style: none;
+  padding-left: 0px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Links */
+.list__item a {
+  text-decoration: none;
+  color: #999;
+}
+
+.list__item a:hover {
+  color: #000;
+}
+
+/* Typography */
+.list {
+  font-size: 13px;
 }
 
 .card {
@@ -124,6 +153,10 @@ body {
     height: 20px;
   }
 
+  .collapsible__inline {
+    display: none;
+  }
+
   .collapsible__hamburger {
     display: block;
     width: 25px;
@@ -133,13 +166,21 @@ body {
     display: none;
   }
 
-  .collapsible__content {
+  .collapsible__block {
+    background-color: #fff;
     border-radius: 10px;
-    border: 1px solid dodgerblue;
+    box-shadow: 0px 100px 250px hsla(0, 0%, 0%, 0.5);
+    left: 10%;
     max-height: 0;
-    overflow: hidden;
     opacity: 0;
+    overflow: hidden;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+    top: 100px;
     transition: all 0.3s;
+    width: 300px;
+    z-index: 100;
   }
 
   .collapsible--expanded .collapsible__hamburger {
@@ -150,9 +191,37 @@ body {
     display: block;
   }
 
-  .collapsible--expanded .collapsible__content {
+  .collapsible--expanded .collapsible__block {
     max-height: 100vh;
     opacity: 1;
+  }
+
+  /* List */
+  .list {
+    list-style: none;
+    padding-left: 0;
+    margin: 20px;
+    font-size: 18px;
+  }
+
+  .list .list__item {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+
+  /* Links */
+  .list__item a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .list__item a:hover {
+    text-decoration: underline;
+  }
+
+  /* Typography */
+  .collapsible__content {
+    font-size: 180px;
   }
 
   .easy-bank {
