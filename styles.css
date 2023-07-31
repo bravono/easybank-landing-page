@@ -4,9 +4,19 @@ body {
   font-family: "Public Sans", sans-serif;
 }
 
+p {
+  color: hsl(0, 0%, 60%);
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 35px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
+  border: 1px solid dodgerblue;
 }
 
 .btn {
@@ -17,15 +27,14 @@ body {
   background: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
 }
 
+/* Article */
+.article-next-gen {
+}
+
 .article-easybank {
   margin: 20px 0;
   background: hsl(0, 0%, 98%);
-}
-
-.article-testimonial {
-  display: flex;
-  margin: 20px 0;
-  background: hsl(0, 0%, 100%);
+  border: 1px solid dodgerblue;
 }
 
 .easybank-card {
@@ -40,18 +49,24 @@ body {
   margin-bottom: 10px;
 }
 
+.article-testimonial {
+  display: flex;
+  margin: 20px 0;
+  background: hsl(0, 0%, 100%);
+}
+
 /* Collapsibles */
 
 .collapsible {
-  z-index: 999;
 }
 
 .collapsible__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 80px;
   padding: 0 10px;
+  border: 1px solid tomato;
 }
 
 .collapsible__hamburger {
@@ -65,6 +80,19 @@ body {
 .collapsible__block {
   max-height: 0;
   overflow: hidden;
+}
+
+.collapsible__bg-mobile {
+  display: none;
+}
+
+.collapsible__image {
+  position: absolute;
+  /* top: -40px;
+    width: 329px;
+    display: block;
+    left: 6.1%;
+    z-index: -999; */
 }
 
 .easy-bank {
@@ -97,6 +125,7 @@ body {
 }
 
 /* Typography */
+
 .list {
   font-size: 13px;
 }
@@ -180,8 +209,27 @@ body {
   .article {
     display: flex;
     flex-direction: column;
-    background: url(./images/bg-intro-mobile.svg);
-    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .article-next-gen {
+    text-align: center;
+    border: 1px solid tomato;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .article-easybank {
+    text-align: center;
+  }
+
+  .easybank-card {
+    display: flex;
+    flex-direction: column;
+    width: 306px;
+    margin: 20px;
+    text-align: center;
   }
 
   /* Collapsibles */
@@ -230,16 +278,22 @@ body {
     left: 8.8%;
     transition: all 0.3s;
     width: 309px;
-    z-index: 100;
+  }
+
+  .collapsible__bg-mobile {
+    width: 100%;
+    position: relative;
+    height: 300px;
+    z-index: -2;
   }
 
   .collapsible__image {
     position: absolute;
-    top: -40px;
+    top: -35px;
     width: 329px;
     display: block;
     left: 6.1%;
-    z-index: -999;
+    z-index: -1;
   }
 
   .collapsible--expanded .collapsible__hamburger {
@@ -285,12 +339,6 @@ body {
   /* Typography */
   .collapsible__content {
     font-size: 180px;
-  }
-
-  .easy-bank {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
   }
 
   .card {
