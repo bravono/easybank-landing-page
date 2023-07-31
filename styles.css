@@ -42,11 +42,14 @@ body {
 
 /* Collapsibles */
 
+.collapsible {
+  z-index: 999;
+}
+
 .collapsible__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid dodgerblue;
   height: 60px;
   padding: 0 10px;
 }
@@ -181,20 +184,16 @@ body {
     background-repeat: no-repeat;
   }
 
-  .phone {
-    position: relative;
-    top: -120px;
-  }
-
   /* Collapsibles */
+
   .collapsible__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid dodgerblue;
     height: 80px;
-    padding: 0 10px;
-    z-index: 999;
+    padding: 0 20px;
+    background-color: white;
+    border: 1px solid dodgerblue;
   }
 
   .collapsible__logo,
@@ -225,12 +224,22 @@ body {
     opacity: 0;
     overflow: hidden;
     padding: 10px;
-    position: fixed;
+    position: absolute;
     text-align: center;
     top: 100px;
+    left: 8.8%;
     transition: all 0.3s;
-    width: 300px;
+    width: 309px;
     z-index: 100;
+  }
+
+  .collapsible__image {
+    position: absolute;
+    top: -40px;
+    width: 329px;
+    display: block;
+    left: 6.1%;
+    z-index: -999;
   }
 
   .collapsible--expanded .collapsible__hamburger {
@@ -244,6 +253,10 @@ body {
   .collapsible--expanded .collapsible__block {
     max-height: 100vh;
     opacity: 1;
+  }
+
+  .collapsible--expanded .collapsible__image {
+    display: none;
   }
 
   /* List */
