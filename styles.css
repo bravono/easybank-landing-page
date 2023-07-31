@@ -9,6 +9,37 @@ body {
   flex-direction: column;
 }
 
+.btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
+}
+
+.article-easybank {
+  margin: 20px 0;
+  background: hsl(0, 0%, 98%);
+}
+
+.article-testimonial {
+  display: flex;
+  margin: 20px 0;
+  background: hsl(0, 0%, 100%);
+}
+
+.easybank-card {
+  height: 250px;
+  display: flex;
+  width: 450px;
+  margin: 20px;
+}
+
+.easybank-svg {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
 /* Collapsibles */
 
 .collapsible__header {
@@ -67,6 +98,10 @@ body {
   font-size: 13px;
 }
 
+.easybank-text {
+  font-size: 13px;
+}
+
 .card {
   background-color: hsl(233, 8%, 62%);
   border-color: hsl(233, 8%, 62%);
@@ -106,6 +141,7 @@ body {
   flex-direction: row;
   padding-bottom: 200px;
 }
+
 /* image */
 .img-card {
   background-color: white;
@@ -137,6 +173,19 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+  /* Basic Style */
+  .article {
+    display: flex;
+    flex-direction: column;
+    background: url(./images/bg-intro-mobile.svg);
+    background-repeat: no-repeat;
+  }
+
+  .phone {
+    position: relative;
+    top: -120px;
+  }
+
   /* Collapsibles */
   .collapsible__header {
     display: flex;
@@ -145,6 +194,7 @@ body {
     border: 1px solid dodgerblue;
     height: 80px;
     padding: 0 10px;
+    z-index: 999;
   }
 
   .collapsible__logo,
@@ -279,7 +329,7 @@ body {
     margin-bottom: 20px;
   }
 
-  /* testimonial */
+  /* Testimonial */
 
   .testimony {
     background-color: rgb(245, 244, 244);
