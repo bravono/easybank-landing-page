@@ -6,35 +6,23 @@ body {
 
 p {
   color: hsl(0, 0%, 60%);
-  font-size: 15px;
-}
-
-h1 {
-  font-size: 35px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   border: 1px solid dodgerblue;
+  margin: 0;
+  width: 1440px;
 }
 
 .btn {
-  padding: 10px 20px;
+  padding: 5px 20px;
   border-radius: 30px;
   border: none;
   color: white;
   background: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
-}
-
-/* Article */
-.article-next-gen {
-}
-
-.article-easybank {
-  margin: 20px 0;
-  background: hsl(0, 0%, 98%);
-  border: 1px solid dodgerblue;
+  font-size: 10px;
 }
 
 .easybank-card {
@@ -49,6 +37,40 @@ h1 {
   margin-bottom: 10px;
 }
 
+/* Article */
+
+.nextgen {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border: 1px solid tomato;
+}
+
+.nextgen__content {
+  margin: 50px;
+}
+
+.nextgen__image {
+  width: 170%;
+  height: 80%;
+  display: block;
+  z-index: -2;
+}
+
+.nextgen__mockup {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: -20%;
+  z-index: -1;
+}
+
+.article-easybank {
+  margin: 20px 0;
+  background: hsl(0, 0%, 98%);
+  border: 1px solid dodgerblue;
+}
+
 .article-testimonial {
   display: flex;
   margin: 20px 0;
@@ -58,6 +80,7 @@ h1 {
 /* Collapsibles */
 
 .collapsible {
+  margin-bottom: 0;
 }
 
 .collapsible__header {
@@ -67,6 +90,8 @@ h1 {
   height: 80px;
   padding: 0 10px;
   border: 1px solid tomato;
+  background-color: white;
+  width: 100%;
 }
 
 .collapsible__hamburger {
@@ -87,12 +112,7 @@ h1 {
 }
 
 .collapsible__image {
-  position: absolute;
-  /* top: -40px;
-    width: 329px;
-    display: block;
-    left: 6.1%;
-    z-index: -999; */
+  display: none;
 }
 
 .easy-bank {
@@ -125,6 +145,16 @@ h1 {
 }
 
 /* Typography */
+p {
+  font-size: 12px;
+}
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 20px;
+}
 
 .list {
   font-size: 13px;
@@ -206,21 +236,52 @@ h1 {
 
 @media screen and (max-width: 375px) {
   /* Basic Style */
-  .article {
+
+  p {
+    color: hsl(0, 0%, 60%);
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid dodgerblue;
+    margin: 0;
+    width: 375px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background: linear-gradient(
+      to left,
+      hsl(192, 70%, 51%),
+      hsl(136, 65%, 51%)
+    );
+  }
+
+  /* .article {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+  } */
 
-  .article-next-gen {
+  .nextgen {
+    display: flex;
     text-align: center;
     border: 1px solid tomato;
     padding: 20px;
     margin: 0;
   }
 
-  .article-easybank {
+  .easybank {
     text-align: center;
   }
 
@@ -285,6 +346,11 @@ h1 {
     position: relative;
     height: 300px;
     z-index: -2;
+    display: block;
+  }
+
+  .nextgen__image {
+    display: none;
   }
 
   .collapsible__image {
