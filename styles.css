@@ -9,8 +9,9 @@ p {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(6, 16.6%);
   border: 1px solid dodgerblue;
   margin: 0;
   width: 1440px;
@@ -41,18 +42,21 @@ p {
 
 .nextgen {
   position: relative;
-  display: grid;
-  grid-template-columns: 50% 50%;
+  /* display: grid;
+  grid-template-columns: auto 50%; */
   border: 1px solid tomato;
+  grid-column: 1 / 5;
 }
 
 .nextgen__content {
-  margin: 50px;
+  /* margin: 50px; */
 }
 
 .nextgen__image {
-  width: 170%;
-  height: 80%;
+  position: relative;
+  width: 50%;
+  top: 50%;
+  left: -10%;
   display: block;
   z-index: -2;
 }
@@ -60,27 +64,30 @@ p {
 .nextgen__mockup {
   position: absolute;
   width: 50%;
-  left: 50%;
-  top: -20%;
+  left: 60%;
+  top: -11%;
   z-index: -1;
+  display: block;
 }
 
-.article-easybank {
+.easybank {
   margin: 20px 0;
   background: hsl(0, 0%, 98%);
   border: 1px solid dodgerblue;
+  grid-column: 1 / 5;
 }
 
-.article-testimonial {
-  display: flex;
+.latest-article {
   margin: 20px 0;
   background: hsl(0, 0%, 100%);
+  grid-column: 1 / 5;
 }
 
 /* Collapsibles */
 
 .collapsible {
   margin-bottom: 0;
+  grid-column: 1 / 5;
 }
 
 .collapsible__header {
@@ -279,6 +286,10 @@ h2 {
     border: 1px solid tomato;
     padding: 20px;
     margin: 0;
+  }
+
+  .nextgen__mockup {
+    display: none;
   }
 
   .easybank {
