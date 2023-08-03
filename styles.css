@@ -8,13 +8,17 @@ p {
   color: hsl(0, 0%, 60%);
 }
 
+footer {
+  border: 1px solid tomato;
+  grid-column: 1 / 5;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(6, 16.6%);
-  border: 1px solid dodgerblue;
+  grid-template-rows: repeat(6, 80px 20fr 20fr 20fr 20fr 80px);
   margin: 0;
-  width: 1440px;
+  height: 90vh;
 }
 
 .btn {
@@ -27,9 +31,7 @@ p {
 }
 
 .easybank-card {
-  height: 250px;
   display: flex;
-  width: 450px;
   margin: 20px;
 }
 
@@ -39,24 +41,27 @@ p {
 }
 
 /* Article */
-
 .nextgen {
   position: relative;
-  /* display: grid;
-  grid-template-columns: auto 50%; */
+  display: grid;
+  grid-template-columns: auto 50%;
+  grid-template-rows: 100%;
   border: 1px solid tomato;
+  align-items: center;
   grid-column: 1 / 5;
+  height: 500px;
 }
 
 .nextgen__content {
-  /* margin: 50px; */
+  padding: 100px;
+}
+
+.nextgen__image-group {
 }
 
 .nextgen__image {
   position: relative;
-  width: 50%;
-  top: 50%;
-  left: -10%;
+  width: 180%;
   display: block;
   z-index: -2;
 }
@@ -65,16 +70,16 @@ p {
   position: absolute;
   width: 50%;
   left: 60%;
-  top: -11%;
-  z-index: -1;
+  top: -20%;
   display: block;
 }
 
 .easybank {
   margin: 20px 0;
   background: hsl(0, 0%, 98%);
-  border: 1px solid dodgerblue;
+  border: 1px solid tomato;
   grid-column: 1 / 5;
+  height: 646px;
 }
 
 .latest-article {
@@ -88,6 +93,8 @@ p {
 .collapsible {
   margin-bottom: 0;
   grid-column: 1 / 5;
+  z-index: 999;
+  border: 1px solid limegreen;
 }
 
 .collapsible__header {
@@ -95,8 +102,7 @@ p {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  padding: 0 10px;
-  border: 1px solid tomato;
+  padding: 0 40px;
   background-color: white;
   width: 100%;
 }
@@ -152,11 +158,13 @@ p {
 }
 
 /* Typography */
+
 p {
-  font-size: 12px;
+  margin: 20px 0;
 }
+
 h1 {
-  font-size: 25px;
+  font-size: 50px;
 }
 
 h2 {
@@ -272,13 +280,6 @@ h2 {
       hsl(136, 65%, 51%)
     );
   }
-
-  /* .article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  } */
 
   .nextgen {
     display: flex;
