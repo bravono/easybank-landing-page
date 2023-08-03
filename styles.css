@@ -31,8 +31,6 @@ p {
   display: flex;
   width: 1000px;
   margin: 20px;
-  background-color: red;
-  border: 6px solid rgb(38, 255, 30);
   width: 85%;
   margin-left: 50px;
 
@@ -45,11 +43,9 @@ p {
 .easybank {
   background: hsl(0, 0%, 98%);
   grid-column: 1 / 5;
-  background-color: yellow;
   width: 85%;
-  border: 6px solid rgb(38, 255, 30);
   padding-top: 10px;
-  margin-top: 100px;
+  margin-top: 10px;
 
 
 }
@@ -91,12 +87,19 @@ p {
   display: block;
 }
 
-
-
-.latest-article {
+.article-flex {
   margin: 20px 0;
   background: hsl(0, 0%, 100%);
-  grid-column: 1 / 5;
+  display: flex;
+
+}
+
+.latest-article {
+  border: 6px solid rgb(182, 40, 40);
+  width: 85%;
+
+ 
+
 }
 
 /* Collapsibles */
@@ -175,7 +178,6 @@ p {
   margin-left: 50px;
   width: 414px;
   margin-left: 50px;
-  color: rgba(37, 3, 230, 0.733);
 }
 
 .svg-caption {
@@ -192,6 +194,13 @@ h1 {
 h2 {
   font-size: 20px;
   margin-left: 50px;
+}
+
+
+.article-header {
+  font-size: 25px;
+  padding-top: 20px;
+  white-space: nowrap;
 }
 
 h3 {
@@ -256,11 +265,13 @@ h3 {
 
 .testimony-img {
   border-radius: 12px;
-  height: 200px;
+  height: 150px;
   margin-top: 0px;
-  margin-top: 60px;
   object-fit: cover;
-  width: 261px;
+  width: 150px;
+  margin-left: 25px;
+  margin-right: 1px;
+
 }
 
 /* testimony text */
@@ -276,6 +287,18 @@ h3 {
   padding-left: 10px;
   padding-top: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 375px) {
   /* Basic Style */
