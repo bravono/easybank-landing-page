@@ -22,12 +22,11 @@ footer {
 }
 
 .btn {
-  padding: 5px 20px;
+  padding: 10px 30px;
   border-radius: 30px;
   border: none;
   color: white;
   background: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
-  font-size: 10px;
 }
 
 .easybank-card {
@@ -50,26 +49,20 @@ footer {
   align-items: center;
   grid-column: 1 / 5;
   height: 500px;
+  background: url(./images/bg-intro-desktop.svg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 230% 60%;
 }
 
 .nextgen__content {
   padding: 100px;
 }
 
-.nextgen__image-group {
-}
-
-.nextgen__image {
-  position: relative;
-  width: 180%;
-  display: block;
-  z-index: -2;
-}
-
 .nextgen__mockup {
   position: absolute;
   width: 50%;
-  left: 60%;
+  left: 58%;
   top: -20%;
   display: block;
 }
