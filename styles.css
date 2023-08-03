@@ -29,8 +29,29 @@ p {
 .easybank-card {
   height: 250px;
   display: flex;
-  width: 450px;
+  width: 1000px;
   margin: 20px;
+  background-color: red;
+  border: 6px solid rgb(38, 255, 30);
+  width: 85%;
+  margin-left: 50px;
+
+
+
+
+}
+
+
+.easybank {
+  background: hsl(0, 0%, 98%);
+  grid-column: 1 / 5;
+  background-color: yellow;
+  width: 85%;
+  border: 6px solid rgb(38, 255, 30);
+  padding-top: 10px;
+  margin-top: 100px;
+
+
 }
 
 .easybank-svg {
@@ -70,12 +91,7 @@ p {
   display: block;
 }
 
-.easybank {
-  margin: 20px 0;
-  background: hsl(0, 0%, 98%);
-  border: 1px solid dodgerblue;
-  grid-column: 1 / 5;
-}
+
 
 .latest-article {
   margin: 20px 0;
@@ -152,15 +168,35 @@ p {
 }
 
 /* Typography */
-p {
+
+
+.header-caption {
   font-size: 12px;
+  margin-left: 50px;
+  width: 414px;
+  margin-left: 50px;
+  color: rgba(37, 3, 230, 0.733);
 }
+
+.svg-caption {
+  font-size: 12px;
+  width: 188px;
+  padding-right: 20px;
+
+}
+
 h1 {
   font-size: 25px;
 }
 
 h2 {
   font-size: 20px;
+  margin-left: 50px;
+}
+
+h3 {
+  font-size: 15px;
+
 }
 
 .list {
