@@ -29,6 +29,10 @@ footer {
   background: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
 }
 
+.btn__header {
+  display: block;
+}
+
 .easybank-card {
   display: flex;
   width: 1000px;
@@ -60,10 +64,14 @@ footer {
   align-items: center;
   grid-column: 1 / 5;
   height: 500px;
+}
+
+.nextgen__bg {
   background: url(./images/bg-intro-desktop.svg);
   background-size: 80%;
   background-repeat: no-repeat;
   background-position: 230% 60%;
+  display: block;
 }
 
 .nextgen__content {
@@ -131,7 +139,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  padding: 0 40px;
+  padding: 0 100px;
   background-color: white;
   width: 100%;
 }
@@ -317,7 +325,6 @@ h3 {
   .container {
     display: flex;
     flex-direction: column;
-    border: 1px solid dodgerblue;
     margin: 0;
     width: 375px;
   }
@@ -334,12 +341,18 @@ h3 {
     );
   }
 
+  .btn__header {
+    display: none;
+  }
+
   .nextgen {
     display: flex;
     text-align: center;
     border: 1px solid tomato;
-    padding: 20px;
-    margin: 0;
+  }
+
+  .nextgen__bg {
+    background: none !important;
   }
 
   .nextgen__mockup {
