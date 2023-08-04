@@ -4,9 +4,9 @@ body {
   font-family: "Public Sans", sans-serif;
 }
 
-p {
+/* p {
   color: hsl(0, 0%, 60%);
-}
+} */
 
 .container {
   display: grid;
@@ -63,9 +63,8 @@ p {
   grid-column: 1 / 5;
 }
 
-.nextgen__content {
+/* .nextgen__content { */
   /* margin: 50px; */
-}
 
 .nextgen__image {
   position: relative;
@@ -170,14 +169,14 @@ p {
   display: none;
 }
 
-.article-eazybank {
+/* .article-eazybank {
   width: 190px;
   margin-right: 15px;
-}
-.easy-bank {
+} */
+/* .easy-bank {
   display: flex;
   margin-top: 10px;
-}
+} */
 
 /* List */
 .list {
@@ -250,28 +249,28 @@ h3 {
   font-size: 13px;
 }
 
-.card {
+/* .card {
   background-color: hsl(233, 8%, 62%);
   border-color: hsl(233, 8%, 62%);
   border-radius: 0%;
   margin-top: 130px;
   padding-left: 50px;
   padding-left: 50x;
-}
+} */
 
-.svg {
+/* .svg {
   padding-left: 0px;
-}
+} */
 
-.svg-container {
+/* .svg-container {
   align-items: center;
   display: flex;
   font-size: xx-large;
   justify-content: left;
   margin-bottom: 20px;
-}
+} */
 
-.text-heading {
+/* .text-heading {
   font-size: 18px;
   font-weight: bolder;
   text-align: left;
@@ -279,23 +278,23 @@ h3 {
 
 .text {
   text-align: left;
-}
+} */
 
 /* Testimony */
 
-.testimony {
+/* .testimony {
   background-color: rgb(245, 244, 244);
   display: flex;
   flex-direction: row;
   padding-bottom: 200px;
-}
+} */
 
 /* image */
-.img-card {
+/* .img-card {
   background-color: white;
   margin: 10px;
   margin-top: 150px;
-}
+} */
 
 .testimony-img {
   height: 150px;
@@ -308,7 +307,7 @@ h3 {
 
 /* testimony text */
 
-.testimony-text {
+/* .testimony-text {
   color: red;
   font-weight: 1px;
   padding-left: 10px;
@@ -318,7 +317,7 @@ h3 {
   position: absolute;
   padding-left: 10px;
   padding-top: 10px;
-}
+} */
 
 
 
@@ -535,16 +534,16 @@ h3 {
     font-size: 180px;
   }
 
-  .card {
+  /* .card {
     background-color: hsl(233, 8%, 62%);
     border-color: hsl(233, 8%, 62%);
     border-radius: 0%;
     padding-left: 100px;
     padding-left: 50x;
     margin-top: 50px;
-  }
+  } */
 
-  .heading {
+  /* .heading {
     font-size: 18px;
     font-weight: bolder;
     margin-left: 10px;
@@ -574,29 +573,29 @@ h3 {
     padding-left: 50px;
     margin-top: 50px;
     padding-bottom: 100px;
-  }
+  } */
 
-  .svg-container {
+  /* .svg-container {
     align-items: center;
     display: flex;
     font-size: xx-large;
     justify-content: center;
     margin-bottom: 20px;
-  }
+  } */
 
   /* Testimonial */
 
-  .testimony {
+  /* .testimony {
     background-color: rgb(245, 244, 244);
     display: flex;
     flex-direction: column;
-  }
+  } */
 
-  .img-card {
+  /* .img-card {
     background-color: white;
     margin: 25px;
     margin-top: 50px;
-  }
+  } */
 
   .testimony-img {
     border-radius: 5px;
@@ -606,23 +605,23 @@ h3 {
     width: 310px;
   }
 
-  .testimony-text {
+  /* .testimony-text {
     flex: 1;
     margin-left: 5px;
-  }
+  } */
 
-  .text-overlay {
+  /* .text-overlay {
     position: absolute;
     padding-left: 20px;
     padding-top: 10px;
-  }
+  } */
 
-  .header-caption {
+  /* .header-caption {
     font-size: 15px;
     width: 355px;
     margin-left: 0px;
 
-  }
+  } */
 
 
   .article-eazybank {
@@ -630,18 +629,18 @@ h3 {
     margin-right: 1500px;
   }
 
-  .svg-caption {
+  /* .svg-caption {
     font-size: 15px;
     width: 355px;
     margin-left: 0px;
   
-  }
+  } */
 
-  .easybank-svg {
+  /* .easybank-svg {
     width: 75px;
     margin-bottom: 10px;
     margin-left: 80%;
-  }
+  } */
 
   /* article */
 
@@ -668,7 +667,7 @@ h3 {
 }
  
 .article-image__wrapper {
-  height: 335px;
+  height: 345px;
   width: 309px;
   background-color: hsl(0, 0%, 100%);
   margin-left: -16px;
@@ -699,7 +698,7 @@ h3 {
 }
 
 }
-
+/* 
 .easy-bank {
   background-color: hsl(233, 8%, 62%);
 
@@ -724,6 +723,6 @@ h3 {
   padding-left: 50px;
   margin-top: 50px;
   padding-bottom: 100px;
-}
+} */
 
 
