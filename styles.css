@@ -34,14 +34,11 @@ p {
   width: 85%;
   margin-left: 50px;
 
-
-
-
 }
 
 
 .easybank {
-  background: hsl(0, 0%, 98%);
+  background: hsl(220, 16%, 96%);
   grid-column: 1 / 5;
   width: 85%;
   padding-top: 10px;
@@ -89,17 +86,46 @@ p {
 
 .article-flex {
   margin: 20px 0;
-  background: hsl(0, 0%, 100%);
   display: flex;
 
 }
 
 .latest-article {
-  border: 6px solid rgb(182, 40, 40);
   width: 85%;
+  height: 500px;
+  padding-left: 50px;
+  background-color: hsl(0, 0%, 98%);
+}
 
- 
+.article-image__wrapper {
+  height: 310px;
+  width: 190px;
+  margin-right: 15px;
+  background-color: hsl(0, 0%, 100%);
 
+}
+
+.article-image__caption {
+  width: 188px;
+  font-size: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+
+
+}
+
+.testimony-image__caption {
+  width: 142px;
+  font-size: 12px;
+  padding-right: 20px;
+  margin-left: 10px;
+
+}
+
+.testimony__name {
+  font-size: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 /* Collapsibles */
@@ -141,6 +167,10 @@ p {
   display: none;
 }
 
+.article-eazybank {
+  width: 190px;
+  margin-right: 15px;
+}
 .easy-bank {
   display: flex;
   margin-top: 10px;
@@ -198,9 +228,10 @@ h2 {
 
 
 .article-header {
-  font-size: 25px;
+  font-size: 22px;
   padding-top: 20px;
   white-space: nowrap;
+  margin-left: 1px;
 }
 
 h3 {
@@ -264,12 +295,10 @@ h3 {
 }
 
 .testimony-img {
-  border-radius: 12px;
   height: 150px;
   margin-top: 0px;
   object-fit: cover;
-  width: 150px;
-  margin-left: 25px;
+  width: 190px;
   margin-right: 1px;
 
 }
