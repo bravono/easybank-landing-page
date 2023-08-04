@@ -25,7 +25,7 @@ body {
   background: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
   font-size: 10px;
 }
-
+/* Eazy bank */
 .easybank-card {
   height: 250px;
   display: flex;
@@ -35,7 +35,6 @@ body {
   margin-left: 50px;
 
 }
-
 
 .easybank {
   background-color: hsl(220, 16%, 96%);
@@ -48,47 +47,22 @@ body {
 
 }
 
-.easybank-svg {
-  width: 40px;
-  margin-bottom: 10px;
-}
-
-/* Article */
-
-.nextgen {
-  position: relative;
-  /* display: grid;
-  grid-template-columns: auto 50%; */
-  border: 1px solid tomato;
-  grid-column: 1 / 5;
-}
-
-/* .nextgen__content { */
-  /* margin: 50px; */
-
-.nextgen__image {
-  position: relative;
-  width: 50%;
-  top: 50%;
-  left: -10%;
-  display: block;
-  z-index: -2;
-}
-
-.nextgen__mockup {
-  position: absolute;
-  width: 50%;
-  left: 60%;
-  top: -11%;
-  z-index: -1;
-  display: block;
-}
-
 .article-flex {
   margin: 20px 0;
   display: flex;
 
 }
+
+
+
+/* Svgs */
+
+.easybank-svg {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+/* Latest Article */
 
 .latest-article {
   width: 85%;
@@ -129,6 +103,48 @@ body {
   margin-top: 20px;
   margin-left: 10px;
 }
+
+.testimony-img {
+  height: 150px;
+  margin-top: 0px;
+  object-fit: cover;
+  width: 190px;
+  margin-right: 1px;
+
+}
+
+
+/* Article */
+
+.nextgen {
+  position: relative;
+  /* display: grid;
+  grid-template-columns: auto 50%; */
+  border: 1px solid tomato;
+  grid-column: 1 / 5;
+}
+
+/* .nextgen__content { */
+  /* margin: 50px; */
+
+.nextgen__image {
+  position: relative;
+  width: 50%;
+  top: 50%;
+  left: -10%;
+  display: block;
+  z-index: -2;
+}
+
+.nextgen__mockup {
+  position: absolute;
+  width: 50%;
+  left: 60%;
+  top: -11%;
+  z-index: -1;
+  display: block;
+}
+
 
 /* Collapsibles */
 
@@ -296,14 +312,7 @@ h3 {
   margin-top: 150px;
 } */
 
-.testimony-img {
-  height: 150px;
-  margin-top: 0px;
-  object-fit: cover;
-  width: 190px;
-  margin-right: 1px;
 
-}
 
 /* testimony text */
 
