@@ -38,12 +38,13 @@ p {
 
 
 .easybank {
-  background: hsl(220, 16%, 96%);
+  background-color: hsl(220, 16%, 96%);
   grid-column: 1 / 5;
   width: 85%;
   padding-top: 10px;
   margin-top: 10px;
-
+  margin-left: 50px;
+  padding-bottom: 1px;
 
 }
 
@@ -92,9 +93,10 @@ p {
 
 .latest-article {
   width: 85%;
-  height: 500px;
+  height: 450px;
   padding-left: 50px;
   background-color: hsl(0, 0%, 98%);
+  margin-left: 50px;
 }
 
 .article-image__wrapper {
@@ -119,6 +121,7 @@ p {
   font-size: 12px;
   padding-right: 20px;
   margin-left: 10px;
+  margin-top: -10px;
 
 }
 
@@ -341,6 +344,12 @@ h3 {
     font-size: 35px;
   }
 
+  h2 {
+    font-size: 20px;
+  width: 200px;
+  margin-top: 50px;
+  }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -382,15 +391,26 @@ h3 {
 
   .easybank {
     text-align: center;
+    width: 375px;
+    height: 900px;
+    padding-top: 10px;
+    margin-top: 10px;
+    padding-bottom: 1px;
+    margin-left: 1px;
   }
 
   .easybank-card {
     display: flex;
     flex-direction: column;
     width: 306px;
-    margin: 20px;
-    text-align: center;
+    margin-left: 0px;
   }
+
+  /*.easybank-svg {
+    width: 40px;
+    margin-bottom: 10px;
+    color: red;
+  } */
 
   /* Collapsibles */
 
@@ -587,10 +607,40 @@ h3 {
     padding-left: 20px;
     padding-top: 10px;
   }
+
+  .header-caption {
+    font-size: 15px;
+    width: 355px;
+    margin-left: 0px;
+
+  }
+
+
+  .article-eazybank {
+    width: 190px;
+    margin-right: 1500px;
+    color: red;
+  }
+
+  .svg-caption {
+    font-size: 15px;
+    width: 355px;
+    margin-left: 0px;
+  
+  }
+
+  .easybank-svg {
+    width: 70px;
+    margin-bottom: 10px;
+    margin-left: 50%;
+  }
+  
 }
 
 .easy-bank {
   background-color: hsl(233, 8%, 62%);
+
+  
 }
 
 .svg {
@@ -612,3 +662,5 @@ h3 {
   margin-top: 50px;
   padding-bottom: 100px;
 }
+
+
