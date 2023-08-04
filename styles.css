@@ -31,7 +31,18 @@ footer {
 
 .easybank-card {
   display: flex;
+  width: 1000px;
   margin: 20px;
+  width: 85%;
+  margin-left: 50px;
+}
+
+.easybank {
+  background: hsl(220, 16%, 96%);
+  grid-column: 1 / 5;
+  width: 85%;
+  padding-top: 10px;
+  margin-top: 10px;
 }
 
 .easybank-svg {
@@ -67,18 +78,43 @@ footer {
   display: block;
 }
 
-.easybank {
+.article-flex {
   margin: 20px 0;
-  background: hsl(0, 0%, 98%);
-  border: 1px solid tomato;
-  grid-column: 1 / 5;
-  height: 646px;
+  display: flex;
 }
 
 .latest-article {
-  margin: 20px 0;
-  background: hsl(0, 0%, 100%);
-  grid-column: 1 / 5;
+  width: 85%;
+  height: 500px;
+  padding-left: 50px;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.article-image__wrapper {
+  height: 310px;
+  width: 190px;
+  margin-right: 15px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.article-image__caption {
+  width: 188px;
+  font-size: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+.testimony-image__caption {
+  width: 142px;
+  font-size: 12px;
+  padding-right: 20px;
+  margin-left: 10px;
+}
+
+.testimony__name {
+  font-size: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 /* Collapsibles */
@@ -121,6 +157,10 @@ footer {
   display: none;
 }
 
+.article-eazybank {
+  width: 190px;
+  margin-right: 15px;
+}
 .easy-bank {
   display: flex;
   margin-top: 10px;
@@ -152,8 +192,17 @@ footer {
 
 /* Typography */
 
-p {
-  margin: 20px 0;
+.header-caption {
+  font-size: 12px;
+  margin-left: 50px;
+  width: 414px;
+  margin-left: 50px;
+}
+
+.svg-caption {
+  font-size: 12px;
+  width: 188px;
+  padding-right: 20px;
 }
 
 h1 {
@@ -162,6 +211,18 @@ h1 {
 
 h2 {
   font-size: 20px;
+  margin-left: 50px;
+}
+
+.article-header {
+  font-size: 22px;
+  padding-top: 20px;
+  white-space: nowrap;
+  margin-left: 1px;
+}
+
+h3 {
+  font-size: 15px;
 }
 
 .list {
@@ -220,12 +281,11 @@ h2 {
 }
 
 .testimony-img {
-  border-radius: 12px;
-  height: 200px;
+  height: 150px;
   margin-top: 0px;
-  margin-top: 60px;
   object-fit: cover;
-  width: 261px;
+  width: 190px;
+  margin-right: 1px;
 }
 
 /* testimony text */
