@@ -348,6 +348,15 @@ h3 {
     font-size: 20px;
   width: 200px;
   margin-top: 50px;
+  margin-left: 90px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-left: 130px;
+    white-space: nowrap;
+    margin-top: 20px;
+  
   }
 
   .container {
@@ -392,7 +401,7 @@ h3 {
   .easybank {
     text-align: center;
     width: 375px;
-    height: 900px;
+    height: 1099px;
     padding-top: 10px;
     margin-top: 10px;
     padding-bottom: 1px;
@@ -594,7 +603,7 @@ h3 {
     height: 200px;
     margin-top: 0px;
     object-fit: cover;
-    width: 340px;
+    width: 310px;
   }
 
   .testimony-text {
@@ -619,7 +628,6 @@ h3 {
   .article-eazybank {
     width: 190px;
     margin-right: 1500px;
-    color: red;
   }
 
   .svg-caption {
@@ -630,11 +638,66 @@ h3 {
   }
 
   .easybank-svg {
-    width: 70px;
+    width: 75px;
     margin-bottom: 10px;
-    margin-left: 50%;
+    margin-left: 80%;
   }
-  
+
+  /* article */
+
+  .latest-article {
+    padding-top: 10px;
+    width: 375px;
+    height: 1600px;
+    margin-left: 0px;
+    background-color: hsl(0, 0%, 98%);
+
+    
+  }
+
+  .article-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-header {
+    font-size: 32px;
+    padding-top: 20px;
+    white-space: nowrap;
+    margin-left: 30px;
+}
+ 
+.article-image__wrapper {
+  height: 335px;
+  width: 309px;
+  background-color: hsl(0, 0%, 100%);
+  margin-left: -16px;
+  margin-bottom: 15px;
+
+}
+
+.article-image__caption {
+  width: 188px;
+  font-size: 10px;
+  padding-right: 10px;
+  margin-left: 25px;
+}
+
+
+.testimony-image__caption {
+  width: 260px;
+  font-size: 12px;
+  padding-right: 20px;
+  margin-left: 25px;
+  margin-top: -10px;
+}
+
+.testimony__name {
+  font-size: 10px;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
 }
 
 .easy-bank {
