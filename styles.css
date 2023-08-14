@@ -1,131 +1,118 @@
-/* Basic Styles */
+/* Basic Style */
 body {
   font-size: 18px;
   font-family: "Public Sans", sans-serif;
+  margin: 0;
 }
 
 p {
   color: hsl(0, 0%, 60%);
+  line-height: 25px;
 }
 
-footer {
-  border: 1px solid tomato;
-  grid-column: 1 / 5;
+span {
+  margin: 5px;
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(6, 80px 20fr 20fr 20fr 20fr 80px);
-  margin: 0;
-  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 98%);
 }
 
 .btn {
-  padding: 10px 30px;
+  padding: 15px 30px;
   border-radius: 30px;
   border: none;
   color: white;
   background: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
+  margin: 20px;
 }
 
 .btn__header {
-  display: block;
+  display: none;
 }
 
-.easybank-card {
+.nextgen-article {
   display: flex;
-  width: 1000px;
-  margin: 20px;
-  width: 85%;
-  margin-left: 50px;
-}
-
-.easybank {
-  background: hsl(220, 16%, 96%);
-  grid-column: 1 / 5;
-  width: 85%;
-  padding-top: 10px;
-  margin-top: 10px;
-}
-
-.easybank-svg {
-  width: 40px;
-  margin-bottom: 10px;
-}
-
-/* Article */
-.nextgen {
-  align-items: center;
-  background-position: 230% 60%;
-  background-repeat: no-repeat;
-  background-image: url(./images/bg-intro-desktop.svg);
-  background-size: 80%;
-  display: grid;
-  grid-column: 1 / 5;
-  grid-template-columns: auto 50%;
-  grid-template-rows: 100%;
-  height: 500px;
-  position: relative;
+  flex-direction: column;
+  text-align: center;
+  background: none !important;
+  padding-bottom: 60px;
 }
 
 .nextgen__content {
-  padding: 100px;
+  padding: 0 20px;
 }
 
 .nextgen__mockup {
-  position: absolute;
-  width: 50%;
-  left: 58%;
-  top: -20%;
-  display: block;
+  display: none;
 }
 
-.article-flex {
-  margin: 20px 0;
-  display: flex;
+.easybank-article {
+  text-align: center;
+  padding: 10px;
+  background-color: hsl(220, 16%, 96%);
 }
 
 .latest-article {
-  width: 85%;
-  height: 500px;
-  padding-left: 50px;
-  background-color: hsl(0, 0%, 98%);
+  padding: 10px;
 }
 
-.article-image__wrapper {
-  height: 310px;
-  width: 190px;
-  margin-right: 15px;
-  background-color: hsl(0, 0%, 100%);
+.latest-article__card {
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: white;
 }
 
-.article-image__caption {
-  width: 188px;
+.latest-article__heading {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.latest-article__image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+
+.latest-article__author {
+  margin-bottom: 0;
+  margin-top: 0;
   font-size: 10px;
-  padding-right: 10px;
-  margin-left: 10px;
 }
 
-.testimony-image__caption {
-  width: 142px;
-  font-size: 12px;
-  padding-right: 20px;
-  margin-left: 10px;
+.latest-article__title {
+  margin-top: 10px;
 }
 
-.testimony__name {
-  font-size: 10px;
-  margin-top: 20px;
-  margin-left: 10px;
+.latest-article__content {
+  padding: 20px;
+}
+
+.footer {
+  background-color: hsl(233, 26%, 24%);
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.footer__logo {
+  margin: 20px;
+}
+
+.footer a {
+  color: white;
+}
+
+.social-icon {
+  width: 25px;
 }
 
 /* Collapsibles */
-
 .collapsible {
-  margin-bottom: 0;
-  grid-column: 1 / 5;
-  z-index: 999;
+  position: relative;
 }
 
 .collapsible__header {
@@ -133,13 +120,25 @@ footer {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  padding: 0 100px;
+  padding: 0 20px;
   background-color: white;
-  width: 100%;
+  position: relative;
+  z-index: 99;
+}
+
+.collapsible__logo,
+.collapsible__close,
+.collapsible__hamburger {
+  height: 20px;
+}
+
+.collapsible__inline {
+  display: none;
 }
 
 .collapsible__hamburger {
-  display: none;
+  display: block;
+  width: 25px;
 }
 
 .collapsible__close {
@@ -147,179 +146,147 @@ footer {
 }
 
 .collapsible__block {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 100px 250px hsla(0, 0%, 0%, 0.5);
+  left: 10%;
   max-height: 0;
+  opacity: 0;
   overflow: hidden;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  transition: all 0.3s;
+  width: 75%;
+  z-index: 99;
 }
 
 .collapsible__bg-mobile {
-  display: none;
+  width: 100%;
+  height: 300px;
+  display: block;
 }
 
 .collapsible__image {
+  display: block;
+  left: 5%;
+  position: absolute;
+  top: -35px;
+  width: 329px;
+}
+
+.collapsible--expanded .collapsible__hamburger {
   display: none;
 }
 
-.article-eazybank {
-  width: 190px;
-  margin-right: 15px;
+.collapsible--expanded .collapsible__close {
+  display: block;
 }
-.easy-bank {
-  display: flex;
-  margin-top: 10px;
+
+.collapsible--expanded .collapsible__block {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+.collapsible--expanded .collapsible__image {
+  display: none;
 }
 
 /* List */
 .list {
-  margin-bottom: 0;
   list-style: none;
   padding-left: 0;
+  margin: 20px;
+  font-size: 18px;
 }
 
-.list--inline .list__item {
+.list .list__item {
   list-style: none;
-  padding-left: 0px;
-  display: inline-block;
-  margin-right: 10px;
+  margin-bottom: 20px;
 }
 
 /* Links */
 .list__item a {
   text-decoration: none;
-  color: #999;
-}
-
-.list__item a:hover {
   color: #000;
 }
 
-/* Typography */
-
-.header-caption {
-  font-size: 12px;
-  margin-left: 50px;
-  width: 414px;
-  margin-left: 50px;
+.list__item a:hover {
+  text-decoration: underline;
 }
 
-.svg-caption {
-  font-size: 12px;
-  width: 188px;
-  padding-right: 20px;
-}
-
-h1 {
-  font-size: 50px;
-}
-
-h2 {
-  font-size: 20px;
-  margin-left: 50px;
-}
-
-.article-header {
-  font-size: 22px;
-  padding-top: 20px;
-  white-space: nowrap;
-  margin-left: 1px;
-}
-
-h3 {
+.footer .list__item a {
+  color: #fff;
   font-size: 15px;
 }
 
-.list {
-  font-size: 13px;
+/* Typography */
+p {
+  font-size: 14px;
 }
 
-.easybank-text {
-  font-size: 13px;
+h1 {
+  font-size: 45px;
+  margin: 0;
 }
 
-.card {
+h2 {
+  font-size: 31px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 300;
+}
+
+.collapsible__content {
+  font-size: 180px;
+}
+
+/* Testimonial */
+
+.easy-bank {
   background-color: hsl(233, 8%, 62%);
-  border-color: hsl(233, 8%, 62%);
-  border-radius: 0%;
-  margin-top: 130px;
-  padding-left: 50px;
-  padding-left: 50x;
 }
-
-.svg {
-  padding-left: 0px;
-}
-
-.svg-container {
-  align-items: center;
-  display: flex;
-  font-size: xx-large;
-  justify-content: left;
-  margin-bottom: 20px;
-}
-
-.text-heading {
-  font-size: 18px;
-  font-weight: bolder;
-  text-align: left;
-}
-
-.text {
-  text-align: left;
-}
-
-/* Testimony */
-
-.testimony {
-  background-color: rgb(245, 244, 244);
-  display: flex;
-  flex-direction: row;
-  padding-bottom: 200px;
-}
-
-/* image */
-.img-card {
-  background-color: white;
-  margin: 10px;
-  margin-top: 150px;
-}
-
-.testimony-img {
-  height: 150px;
-  margin-top: 0px;
-  object-fit: cover;
-  width: 190px;
-  margin-right: 1px;
-}
-
-/* testimony text */
-
-.testimony-text {
-  color: red;
-  font-weight: 1px;
-  padding-left: 10px;
-}
-
-.text-overlay {
-  position: absolute;
-  padding-left: 10px;
-  padding-top: 10px;
-}
-
-@media screen and (max-width: 375px) {
-  /* Basic Style */
+@media screen and (min-width: 786px) {
+  /* Basic Styles */
+  body {
+    font-size: 18px;
+    font-family: "Public Sans", sans-serif;
+  }
 
   p {
     color: hsl(0, 0%, 60%);
   }
 
+  footer {
+    align-items: center;
+    background-color: hsl(233, 26%, 24%);
+    border: 1px solid dodgerblue;
+    display: grid;
+    grid-column: 1 / 5;
+    grid-template-columns: 30% 30% 40%;
+    height: 160px;
+    justify-items: center;
+  }
+
+  .footer__logo {
+    padding: 10px 0;
+  }
+
   .container {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    width: 375px;
+    background-color: hsl(220, 16%, 96%);
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    grid-template-rows: repeat(6, 80px 20fr 20fr 20fr 20fr 80px);
+    width: 100vw;
   }
 
   .btn {
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-radius: 30px;
     border: none;
     color: white;
@@ -331,62 +298,88 @@ h3 {
   }
 
   .btn__header {
-    display: none;
+    display: block;
   }
 
-  .nextgen {
-    display: flex;
-    flex-direction: c;
-    border: 1px solid tomato;
-    text-align: center;
-    background: none !important;
-  }
-
-  .nextgen__content {
-    padding: 20px;
-  }
-
-  .nextgen__mockup {
-    display: none;
-  }
-
-  .easybank {
-    text-align: center;
+  .btn__footer {
+    display: block;
+    margin-bottom: 10px;
   }
 
   .easybank-card {
+    /* There are 2 rules for width */
     display: flex;
-    flex-direction: column;
-    width: 306px;
+    width: 1000px;
     margin: 20px;
-    text-align: center;
+    width: 85%;
+    margin-left: 50px;
+  }
+
+  .easybank-article {
+    background: hsl(220, 16%, 96%);
+    grid-column: 1 / 5;
+    width: 85%;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  .easybank-svg {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+
+  /* Article */
+  .nextgen {
+    align-items: center;
+    background-position: 230% 60%;
+    background-repeat: no-repeat;
+    background-image: url(./images/bg-intro-desktop.svg);
+    background-size: 80%;
+    display: grid;
+    grid-column: 1 / 5;
+    grid-template-columns: auto 50%;
+    grid-template-rows: 100%;
+    height: 500px;
+    position: relative;
+  }
+
+  .nextgen__content {
+    padding: 100px;
+  }
+
+  .nextgen__mockup {
+    position: absolute;
+    width: 50%;
+    left: 58%;
+    top: -20%;
+    display: block;
+  }
+
+  .article-image__caption {
+    width: 188px;
+    font-size: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
   }
 
   /* Collapsibles */
+
+  .collapsible {
+    grid-column: 1 / 5;
+    z-index: 999;
+    background-color: white;
+  }
 
   .collapsible__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    padding: 0 20px;
-    background-color: white;
-    border: 1px solid dodgerblue;
+    padding: 0 100px;
   }
 
-  .collapsible__logo,
-  .collapsible__close,
   .collapsible__hamburger {
-    height: 20px;
-  }
-
-  .collapsible__inline {
     display: none;
-  }
-
-  .collapsible__hamburger {
-    display: block;
-    width: 25px;
   }
 
   .collapsible__close {
@@ -394,195 +387,129 @@ h3 {
   }
 
   .collapsible__block {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 100px 250px hsla(0, 0%, 0%, 0.5);
-    left: 10%;
     max-height: 0;
-    opacity: 0;
     overflow: hidden;
-    padding: 10px;
-    position: absolute;
-    text-align: center;
-    top: 100px;
-    left: 8.8%;
-    transition: all 0.3s;
-    width: 309px;
   }
 
   .collapsible__bg-mobile {
-    width: 100%;
-    position: relative;
-    height: 300px;
-    z-index: -2;
-    display: block;
+    display: none;
   }
 
   .collapsible__image {
-    position: absolute;
-    top: -35px;
-    width: 329px;
-    display: block;
-    left: 6.1%;
-    z-index: -1;
-  }
-
-  .collapsible--expanded .collapsible__hamburger {
     display: none;
   }
 
-  .collapsible--expanded .collapsible__close {
-    display: block;
+  .article-eazybank {
+    width: 190px;
+    margin-right: 15px;
   }
-
-  .collapsible--expanded .collapsible__block {
-    max-height: 100vh;
-    opacity: 1;
-  }
-
-  .collapsible--expanded .collapsible__image {
-    display: none;
+  .easy-bank {
+    display: flex;
+    margin-top: 10px;
   }
 
   /* List */
   .list {
+    margin-bottom: 0;
     list-style: none;
     padding-left: 0;
-    margin: 20px;
-    font-size: 18px;
   }
 
-  .list .list__item {
+  .list--inline .list__item {
     list-style: none;
-    margin-bottom: 20px;
+    padding-left: 0px;
+    display: inline-block;
+    margin-right: 10px;
   }
 
   /* Links */
   .list__item a {
     text-decoration: none;
-    color: #000;
+    color: #999;
   }
 
   .list__item a:hover {
-    text-decoration: underline;
+    color: #000;
   }
 
   /* Typography */
-  p {
-    font-size: 14px;
+
+  .header-caption {
+    font-size: 12px;
+    margin-left: 50px;
+    width: 414px;
+    margin-left: 50px;
+  }
+
+  .svg-caption {
+    font-size: 12px;
+    width: 188px;
+    padding-right: 20px;
   }
 
   h1 {
-    font-size: 35px;
+    font-size: 50px;
+    margin: 0;
   }
 
-  .collapsible__content {
-    font-size: 180px;
+  h2 {
+    font-size: 20px;
+    margin-left: 50px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  .list {
+    font-size: 13px;
+  }
+
+  .easybank-text {
+    font-size: 13px;
   }
 
   .card {
     background-color: hsl(233, 8%, 62%);
     border-color: hsl(233, 8%, 62%);
     border-radius: 0%;
-    padding-left: 100px;
-    padding-left: 50x;
-    margin-top: 50px;
-  }
-
-  .heading {
-    font-size: 18px;
-    font-weight: bolder;
-    margin-left: 10px;
-    margin-top: 20px;
-    text-align: left;
-  }
-
-  .heading-text {
-    display: block;
-  }
-
-  .text-heading {
-    font-size: 18px;
-    font-weight: bolder;
-    margin-left: 115px;
-    text-align: center;
-  }
-
-  .text {
-    text-align: center;
-  }
-
-  .text-overlay {
-    display: flex;
-    justify-content: center;
-    position: absolute;
+    margin-top: 130px;
     padding-left: 50px;
-    margin-top: 50px;
-    padding-bottom: 100px;
+    padding-left: 50x;
+  }
+
+  .svg {
+    padding-left: 0px;
   }
 
   .svg-container {
     align-items: center;
     display: flex;
     font-size: xx-large;
-    justify-content: center;
+    justify-content: left;
     margin-bottom: 20px;
   }
 
-  /* Testimonial */
-
-  .testimony {
-    background-color: rgb(245, 244, 244);
-    display: flex;
-    flex-direction: column;
+  .text-heading {
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: left;
   }
 
+  .text {
+    text-align: left;
+  }
+
+  /* image */
   .img-card {
     background-color: white;
-    margin: 25px;
-    margin-top: 50px;
-  }
-
-  .testimony-img {
-    border-radius: 5px;
-    height: 200px;
-    margin-top: 0px;
-    object-fit: cover;
-    width: 340px;
-  }
-
-  .testimony-text {
-    flex: 1;
-    margin-left: 5px;
+    margin: 10px;
+    margin-top: 150px;
   }
 
   .text-overlay {
     position: absolute;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-top: 10px;
   }
-}
-
-.easy-bank {
-  background-color: hsl(233, 8%, 62%);
-}
-
-.svg {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.heading {
-  font-size: 18px;
-  font-weight: bolder;
-  margin-left: 10px;
-  margin-left: 115px;
-  text-align: center;
-}
-
-.text-overlay {
-  position: absolute;
-  padding-left: 50px;
-  margin-top: 50px;
-  padding-bottom: 100px;
 }
