@@ -55,6 +55,15 @@ span {
   background-color: hsl(220, 16%, 96%);
 }
 
+/* Svgs */
+
+.easybank-svg {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+/* Latest Article */
+
 .latest-article {
   padding: 10px;
 }
@@ -108,6 +117,46 @@ span {
 
 .social-icon {
   width: 25px;
+}
+
+.testimony-img {
+  height: 150px;
+  margin-top: 0px;
+  object-fit: cover;
+  width: 190px;
+  margin-right: 1px;
+}
+
+/* Article */
+
+.nextgen {
+  position: relative;
+  /* display: grid;
+  grid-template-columns: auto 50%; */
+  border: 1px solid tomato;
+  grid-column: 1 / 5;
+}
+
+.nextgen__content {
+  margin: 50px;
+}
+
+.nextgen__image {
+  position: relative;
+  width: 50%;
+  top: 50%;
+  left: -10%;
+  display: block;
+  z-index: -2;
+}
+
+.nextgen__mockup {
+  position: absolute;
+  width: 50%;
+  left: 60%;
+  top: -11%;
+  z-index: -1;
+  display: block;
 }
 
 /* Collapsibles */
@@ -277,6 +326,20 @@ h4 {
     padding: 10px 0;
   }
 
+  h2 {
+    font-size: 20px;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 90px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-left: 130px;
+    white-space: nowrap;
+    margin-top: 20px;
+  }
+
   .container {
     background-color: hsl(220, 16%, 96%);
     display: grid;
@@ -360,6 +423,12 @@ h4 {
     font-size: 10px;
     padding-right: 10px;
     margin-left: 10px;
+  }
+
+  .easybank-svg {
+    width: 40px;
+    margin-bottom: 10px;
+    color: red;
   }
 
   /* Collapsibles */
@@ -505,6 +574,70 @@ h4 {
     background-color: white;
     margin: 10px;
     margin-top: 150px;
+  }
+
+  .text-overlay {
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  .header-caption {
+    font-size: 15px;
+    width: 355px;
+    margin-left: 0px;
+  }
+
+  .article-eazybank {
+    width: 190px;
+    margin-right: 1500px;
+  }
+
+  .svg-caption {
+    font-size: 15px;
+    width: 355px;
+    margin-left: 0px;
+  }
+
+  .easybank-svg {
+    width: 75px;
+    margin-bottom: 10px;
+    margin-left: 80%;
+  }
+
+  /* article */
+
+  .latest-article {
+    padding-top: 10px;
+    width: 375px;
+    height: 1600px;
+    margin-left: 0px;
+    background-color: hsl(0, 0%, 98%);
+  }
+
+  .article-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-header {
+    font-size: 32px;
+    padding-top: 20px;
+    white-space: nowrap;
+    margin-left: 30px;
+  }
+
+  .testimony-img {
+    border-radius: 5px;
+    height: 200px;
+    margin-top: 0px;
+    object-fit: cover;
+    width: 340px;
+  }
+
+  .testimony-text {
+    flex: 1;
+    margin-left: 5px;
   }
 
   .text-overlay {
