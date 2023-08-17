@@ -27,8 +27,8 @@ span {
 }
 
 .btn {
-  padding: 1rem 3rem;
-  border-radius: 3rem;
+  padding: 10px 30px;
+  border-radius: 30px;
   border: none;
   color: white;
   background: linear-gradient(to left, hsl(192, 70%, 51%), hsl(136, 65%, 51%));
@@ -51,7 +51,7 @@ span {
   padding: var(--padding);
 }
 
-.nextgen__mockup {
+.nextgen__image {
   display: none;
 }
 
@@ -158,7 +158,7 @@ span {
   z-index: -2;
 }
 
-.nextgen__mockup {
+.nextgen__image {
   position: absolute;
   width: 50%;
   left: 60%;
@@ -315,23 +315,6 @@ h4 {
     color: hsl(0, 0%, 60%);
   }
 
-  /* Footer */
-
-  footer {
-    align-items: center;
-    background-color: hsl(233, 26%, 24%);
-    border: 0.1rem solid dodgerblue;
-    display: grid;
-    grid-column: 1 / 5;
-    grid-template-columns: 30% 30% 40%;
-    height: 160px;
-    justify-items: center;
-  }
-
-  .footer__logo {
-    padding: 1rem 0;
-  }
-
   h2 {
     font-size: 2rem;
     width: 200px;
@@ -346,17 +329,58 @@ h4 {
     margin-top: 2rem;
   }
 
+  /* Article */
+  .nextgen-article {
+    background-image: url(./images/bg-intro-desktop.svg);
+    background-position: 230% 60%;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    border: 1px solid gray;
+    display: grid;
+    grid-template-columns: auto 50%;
+    margin-top: 0;
+    position: relative;
+    padding: 0 0 0 10rem;
+  }
+
+  .nextgen__content {
+    /* border: 1px solid dodgerblue; */
+    padding: 0 8rem 0 0;
+    margin: 16rem 0;
+    text-align: start;
+  }
+
+  .nextgen__image {
+    position: absolute;
+    width: 50%;
+    left: 58%;
+    top: -25%;
+    display: block;
+    z-index: 9;
+  }
+
+  .article-image__caption {
+    width: 188px;
+    font-size: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .easybank-svg {
+    width: 4rem;
+    margin-bottom: 1rem;
+    color: red;
+  }
+
   .container {
     background-color: hsl(220, 16%, 96%);
-    display: grid;
-    grid-template-columns: repeat(3, 33.3%);
-    grid-template-rows: repeat(6, 8rem 20fr 20fr 20fr 20fr 8rem);
-    width: 100vw;
+    display: flex;
+    border: 3px solid dodgerblue;
   }
 
   .btn {
-    padding: 1rem 3rem;
-    border-radius: 3rem;
+    padding: 10px 30px;
+    border-radius: 30px;
     border: none;
     color: white;
     background: linear-gradient(
@@ -364,6 +388,7 @@ h4 {
       hsl(192, 70%, 51%),
       hsl(136, 65%, 51%)
     );
+    margin: 0;
   }
 
   .btn:hover {
@@ -375,6 +400,21 @@ h4 {
     display: block;
   }
 
+  /* Footer */
+  footer {
+    align-items: center;
+    background-color: hsl(233, 26%, 24%);
+    border: 0.1rem solid dodgerblue;
+    display: grid;
+    grid-column: 1 / 5;
+    grid-template-columns: 30% 30% 40%;
+    height: 160px;
+    justify-items: center;
+  }
+
+  .footer__logo {
+    padding: 1rem 0;
+  }
   .btn__footer {
     display: block;
     margin-bottom: 1rem;
@@ -389,42 +429,6 @@ h4 {
   .easybank-svg {
     width: 4rem;
     margin-bottom: 1rem;
-  }
-
-  /* Article */
-  .nextgen {
-    align-items: center;
-    background-position: 230% 60%;
-    background-repeat: no-repeat;
-    background-image: url(./images/bg-intro-desktop.svg);
-    background-size: 80%;
-    display: grid;
-    grid-column: 1 / 5;
-    grid-template-columns: auto 50%;
-    grid-template-rows: 100%;
-    height: 5rem;
-    position: relative;
-  }
-
-  .nextgen__mockup {
-    position: absolute;
-    width: 50%;
-    left: 58%;
-    top: -20%;
-    display: block;
-  }
-
-  .article-image__caption {
-    width: 188px;
-    font-size: 1rem;
-    padding-right: 1rem;
-    margin-left: 1rem;
-  }
-
-  .easybank-svg {
-    width: 4rem;
-    margin-bottom: 1rem;
-    color: red;
   }
 
   /* Collapsibles */
