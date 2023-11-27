@@ -395,7 +395,7 @@ span {
     grid-template-columns: repeat(2 50%);
     grid-template-rows: repeat(2 50%);
     margin: 0 10rem;
-    padding: var(--padding-primary);
+    padding: 10rem 0;
   }
 
   .easybank__intro p:first-of-type {
